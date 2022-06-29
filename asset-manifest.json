@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/SILOC-v2/static/css/main.d7723d34.css",
-    "main.js": "/SILOC-v2/static/js/main.b474ec30.js",
+    "main.css": "/SILOC-v2/static/css/main.961e5752.css",
+    "main.js": "/SILOC-v2/static/js/main.d9646104.js",
     "static/js/787.b67d13ac.chunk.js": "/SILOC-v2/static/js/787.b67d13ac.chunk.js",
     "static/media/Brasao.png": "/SILOC-v2/static/media/Brasao.792e08c04514fc229d3d.png",
     "static/media/background.png": "/SILOC-v2/static/media/background.e9c0f7e840492f05d527.png",
     "index.html": "/SILOC-v2/index.html",
-    "main.d7723d34.css.map": "/SILOC-v2/static/css/main.d7723d34.css.map",
-    "main.b474ec30.js.map": "/SILOC-v2/static/js/main.b474ec30.js.map",
+    "main.961e5752.css.map": "/SILOC-v2/static/css/main.961e5752.css.map",
+    "main.d9646104.js.map": "/SILOC-v2/static/js/main.d9646104.js.map",
     "787.b67d13ac.chunk.js.map": "/SILOC-v2/static/js/787.b67d13ac.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d7723d34.css",
-    "static/js/main.b474ec30.js"
+    "static/css/main.961e5752.css",
+    "static/js/main.d9646104.js"
   ]
 }
