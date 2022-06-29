@@ -2,18 +2,18 @@ import React, { useEffect, useRef, useState } from "react";
 import Header from "../../components/header";
 import Footer from "../../components/footer";
 
-import "./index.css";
 import FreezerButton from "./components/freezer_button";
 import BottomSheet from "./components/bottom_sheet";
 import RegistrationNickPopup from "./components/registration_nick_popup";
+import ChamberSelection from "../../components/chamber-selection";
+import { useChamber } from "../../contexts/chamber-context";
 
 function Home() {
+  const { selectedChamber, updateChamber } = useChamber();
   const [registrationVisible, setRegistrationVisible] = useState(false);
   const [search, setSearch] = useState("");
 
   const selectedIndex = useRef(0);
-
-  const [freezers, setFreezers] = useState(Array(30).fill(""));
 
   const [freezersBySearch, setFreezersBySearch] = useState();
 
@@ -22,20 +22,28 @@ function Home() {
   };
 
   const onConfirmRegis = (nick) => {
-    const newFreezers = [...freezers];
+    const newFreezers = [...selectedChamber.freezers];
 
     newFreezers[selectedIndex.current] = nick;
 
-    setFreezers(newFreezers);
+    updateChamber(selectedChamber.id, {
+      ...selectedChamber,
+      freezers: newFreezers,
+    });
+
     setRegistrationVisible(false);
   };
 
   const onRemoveCorpse = () => {
-    const newFreezers = [...freezers];
+    const newFreezers = [...selectedChamber.freezers];
 
     newFreezers[selectedIndex.current] = "";
 
-    setFreezers(newFreezers);
+    updateChamber(selectedChamber.id, {
+      ...selectedChamber,
+      freezers: newFreezers,
+    });
+
     setRegistrationVisible(false);
   };
 
@@ -52,9 +60,9 @@ function Home() {
   };
 
   useEffect(() => {
-    const renderFreezers = freezers.map((i, index) => (
+    const renderFreezers = selectedChamber.freezers.map((i, index) => (
       <FreezerButton
-        nick={freezers[index]}
+        nick={selectedChamber.freezers[index]}
         index={index}
         onClick={onFreezerClick}
       ></FreezerButton>
@@ -64,18 +72,17 @@ function Home() {
       renderFreezers.filter((e, index) => {
         if (search === "") return true;
 
-        return freezers[index].includes(search);
+        return selectedChamber.freezers[index].includes(search);
       })
     );
-  }, [search, freezers]);
+  }, [search, selectedChamber]);
 
   return (
     <>
       <Header onSearchInput={onSearchInput}></Header>
-      <div className="content">
-        <h4>Câmaras Frias</h4>
-        <h3>Necrotério</h3>
-      </div>
+
+      <ChamberSelection></ChamberSelection>
+
       <div className="freezers">{freezersBySearch}</div>
       <BottomSheet
         onRemoveClick={onRemoveCorpse}

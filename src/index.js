@@ -4,10 +4,14 @@ import Home from "./modules/home";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 
+import { ChamberProvider } from "./contexts/chamber-context";
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Home />
+    <ChamberProvider>
+      <Home />
+    </ChamberProvider>
   </React.StrictMode>
 );
 

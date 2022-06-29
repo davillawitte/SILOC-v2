@@ -1,0 +1,20 @@
+.arrow-button {
+  background-color: black;
+
+  border: none;
+
+  padding: 0.5rem;
+
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+
+  border-radius: 5px;
+
+  cursor: pointer;
+}
+
+.arrow-button-text {
+  color: white;
+
+  font-size: larger;
+}
