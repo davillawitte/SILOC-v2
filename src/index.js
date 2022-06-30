@@ -5,12 +5,16 @@ import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 
 import { ChamberProvider } from "./contexts/chamber-context";
+import { BrowserRouter } from "react-router-dom";
+import SILOCRoutes from "./routes";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <ChamberProvider>
-      <Home />
+      <BrowserRouter>
+        <SILOCRoutes />
+      </BrowserRouter>
     </ChamberProvider>
   </React.StrictMode>
 );
