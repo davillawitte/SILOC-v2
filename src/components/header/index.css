@@ -1,0 +1,86 @@
+.siloc-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem 2rem;
+}
+
+.siloc-title {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 0;
+}
+
+.siloc-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+
+.nav-space {
+  margin-right: 2rem;
+}
+
+.nav-button {
+  border: none;
+  color: white;
+  background-color: transparent;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.nav-button:hover {
+  border-bottom: 2px solid #d0d0d0;
+}
+
+.logo {
+  width: 15vw;
+  object-fit: contain;
+  height: 200px;
+  background: url(../../assets/Brasao.png) center center/170px no-repeat;
+  font-size: 0;
+  transform: translateY(3rem);
+  z-index: 1;
+}
+
+.search-box {
+  background: #2f3640;
+  height: 60px;
+  border-radius: 40px;
+  padding: 15px;
+  border: #f1f1f1 inset;
+  box-shadow: 2px 2px 3px #131313a8;
+}
+
+.search-btn {
+  color: #f1f1f1;
+  float: right;
+  width: 40px;
+  height: 30px;
+  border-radius: 50%;
+  background: #2f3640;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-txt {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: white;
+  font-size: 18px;
+  transition: 0.4s;
+  line-height: 20px;
+  width: 260px;
+}

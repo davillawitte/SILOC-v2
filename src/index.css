@@ -37,48 +37,6 @@ header {
   width: 100%;
 }
 
-.search-box {
-  transform: translate(-5%, -120%);
-  background: #2f3640;
-  height: 60px;
-  border-radius: 40px;
-  padding: 15px;
-  border: #f1f1f1 inset;
-  box-shadow: 2px 2px 3px #131313a8;
-  float: right;
-  right: 5%;
-  top: 0%;
-  position: relative;
-}
-
-.search-btn {
-  color: #f1f1f1;
-  float: right;
-  width: 40px;
-  height: 30px;
-  border-radius: 50%;
-  background: #2f3640;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  top: 24%;
-  left: 85%;
-  position: absolute;
-}
-
-.search-txt {
-  border: none;
-  background: none;
-  outline: none;
-  float: left;
-  padding: 0;
-  color: white;
-  font-size: 18px;
-  transition: 0.4s;
-  line-height: 20px;
-  width: 260px;
-}
-
 .circulo {
   width: 724px;
   height: 80px;
@@ -164,18 +122,6 @@ footer {
   color: #fff;
   width: 100vw;
   padding: 20px 0;
-}
-
-.logo {
-  width: 200px;
-  height: 200px;
-  float: left;
-  background: url(./assets/Brasao.png) center center/170px no-repeat;
-  font-size: 0;
-  left: 15%;
-  top: 4%;
-  position: relative;
-  transform: translate(-5%, -60%);
 }
 
 #bottomSheetContainer {
