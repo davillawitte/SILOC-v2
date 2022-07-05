@@ -1,0 +1,78 @@
+.occupation-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  padding-bottom: 1.5rem;
+  padding-top: 0.5rem;
+
+  border-radius: 10px;
+
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.card-title {
+  font-family: "montserrat", sans-serif;
+  text-transform: uppercase;
+
+  font-weight: 500;
+
+  font-size: 1.3rem;
+
+  margin-bottom: 0.5rem;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.card-texts {
+  display: flex;
+  flex-direction: column;
+  margin-right: 3rem;
+}
+
+.text {
+  font-family: "montserrat", sans-serif;
+  text-transform: uppercase;
+
+  font-weight: 700;
+
+  font-size: 1rem;
+}
+
+.graph {
+  display: flex;
+  width: 8rem;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.percentage {
+  font-family: "montserrat", sans-serif;
+  text-transform: uppercase;
+
+  font-weight: 700;
+
+  font-size: 1.3rem;
+}
+
+.total-text {
+  font-family: "montserrat", sans-serif;
+  text-transform: uppercase;
+
+  font-weight: 500;
+
+  font-size: 0.8rem;
+}
+
+.graph-text {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
