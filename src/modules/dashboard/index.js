@@ -6,6 +6,8 @@ import ChamberSelection from "../../components/chamber-selection";
 
 import "./styles.css";
 import OccupationCard from "./components/occupation-card";
+import ManutationCard from "./components/manutation-card";
+import ChartCard from "./components/chart-card";
 
 function Dashboard() {
   return (
@@ -15,7 +17,14 @@ function Dashboard() {
 
       <section className="cards-container">
         <OccupationCard></OccupationCard>
+
+        <ManutationCard></ManutationCard>
       </section>
+
+      <section className="chart">
+        <ChartCard></ChartCard>
+      </section>
+
       <Footer></Footer>
     </section>
   );

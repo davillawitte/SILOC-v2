@@ -5,11 +5,15 @@ const CHAMBERS = [
     id: 0,
     name: "NECROTÉRIO",
     freezers: Array(30).fill(""),
+    log: [0, 2, 5, 1, 10, 4, 8, 0, 1, 9, 0, 2],
+    nextMaintanceDate: "21/04/2023",
   },
   {
     id: 1,
     name: "Exemplo",
     freezers: Array(15).fill(""),
+    log: [0, 2, 0, 3, 2, 1, 10, 4, 6, 7, 3, 5],
+    nextMaintanceDate: "25/12/2022",
   },
 ];
 
