@@ -8,6 +8,7 @@ import "./styles.css";
 import OccupationCard from "./components/occupation-card";
 import ManutationCard from "./components/manutation-card";
 import ChartCard from "./components/chart-card";
+import TemperatureCard from "./components/temperature-card";
 
 function Dashboard() {
   return (
@@ -17,6 +18,8 @@ function Dashboard() {
 
       <section className="cards-container">
         <OccupationCard></OccupationCard>
+
+        <TemperatureCard></TemperatureCard>
 
         <ManutationCard></ManutationCard>
       </section>
